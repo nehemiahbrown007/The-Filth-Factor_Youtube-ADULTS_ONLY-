@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Conversation Pit | S.S. Seduction Community</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .community-feed {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+            background: #050505;
+        }
+        .feed-item {
+            background: #0a0a0a;
+            border: 1px solid #222;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-left: 4px solid #00f2ff;
+        }
+        .user-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .user-meta span {
+            color: #ff00ff;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .post-content {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 1.5rem;
+        }
+        .post-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border: 1px solid #333;
+            margin-bottom: 1rem;
+        }
+        .comment-thread {
+            border-top: 1px solid #222;
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+        .comment-box {
+            width: 100%;
+            background: #111;
+            border: 1px solid #333;
+            color: #fff;
+            padding: 1rem;
+            margin-top: 1rem;
+            resize: none;
+        }
+        .submit-post-btn {
+            background: #00f2ff;
+            color: #000;
+            padding: 0.5rem 1.5rem;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            float: right;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="main-nav" style="position: relative; background: #000;">
+        <div class="logo">THE FILTH FACTOR</div>
+        <ul class="nav-links">
+            <li><a href="index.html">The Promenade</a></li>
+            <li><a href="profile.html">My Manifest</a></li>
+            <li><a href="#vault">The Vault</a></li>
+        </ul>
+    </nav>
+
+    <div class="community-feed">
+        <h2 class="section-title">The Conversation Pit</h2>
+        <p style="text-align: center; color: #888; margin-top: -2rem; margin-bottom: 3rem;">
+            Explore the literal and literary depths of desire. Share your aesthetic. Discuss the Chapters.
+        </p>
+
+        <div class="feed-item" style="border-left: 4px solid #ff00ff;">
+            <h3 style="font-size: 1rem; margin-bottom: 1rem;">Contribute to the Manifest</h3>
+            <textarea class="comment-box" placeholder="Write your extreme desire or literary analysis here..."></textarea>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
+                <input type="file" style="color: #666; font-size: 0.8rem;">
+                <button class="submit-post-btn">POST TO FEED</button>
+            </div>
+        </div>
+
+        <div class="feed-item">
+            <div class="user-meta">
+                <div style="width: 30px; height: 30px; background: #222; border-radius: 50%;"></div>
+                <span>Sovereign_Alpha_99</span>
+                <small style="color: #555;">Uploaded to Chapter 10: The Filthinator</small>
+            </div>
+            <img src="assets/user_aesthetic_1.jpg" alt="Aesthetic Upload" class="post-image">
+            <p class="post-content">
+                "The way Julio describes the 'Primal Forest' resonates with my own rejection of the synthetic. 
+                I find that the saturation of the natural state is where the true intoxication lives."
+            </p>
+            <div class="comment-thread">
+                <div style="font-size: 0.85rem; color: #888;">
+                    <strong>Eva_Hunter_Official:</strong> "Absolutely. The friction of the forest is the true high-seas heat."
+                </div>
+                <textarea class="comment-box" style="height: 60px;" placeholder="Add to the conversation..."></textarea>
+            </div>
+        </div>
+
+        <div class="feed-item">
+            <div class="user-meta">
+                <div style="width: 30px; height: 30px; background: #222; border-radius: 50%;"></div>
+                <span>Ice_Christ_Disciple</span>
+                <small style="color: #555;">Discussing: The Frost Queen's Wand</small>
+            </div>
+            <p class="post-content">
+                Does anyone else feel the 'Titanic Weight' when they view the Wand NFT? It feels like the 
+                metaphysical key is already turning.
+            </p>
+            <div class="comment-thread">
+                <textarea class="comment-box" style="height: 60px;" placeholder="Add to the conversation..."></textarea>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
