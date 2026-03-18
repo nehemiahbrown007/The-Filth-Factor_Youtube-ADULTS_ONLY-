@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watching: Chapter 10 | The Filth Factor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .viewport-page {
+            background: #050505;
+            min-height: 100vh;
+            padding-bottom: 5rem;
+        }
+        .video-theatre {
+            width: 100%;
+            background: #000;
+            padding: 2rem 10%;
+            border-bottom: 1px solid #1a001a;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            box-shadow: 0 0 50px rgba(255, 0, 255, 0.1);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .content-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+        }
+        .chapter-details h1 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .chapter-description {
+            color: #ccc;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        .sidebar-actions {
+            background: #0a0a0a;
+            padding: 2rem;
+            border: 1px solid #222;
+            height: fit-content;
+        }
+        .action-item {
+            margin-bottom: 2rem;
+        }
+        .action-item h4 {
+            font-size: 0.8rem;
+            color: #00f2ff;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="main-nav" style="position: relative; background: #000;">
+        <div class="logo">THE FILTH FACTOR</div>
+        <ul class="nav-links">
+            <li><a href="index.html">The Promenade</a></li>
+            <li><a href="manifest.html">The Archive</a></li>
+            <li><a href="profile.html">My Manifest</a></li>
+        </ul>
+    </nav>
+
+    <div class="viewport-page">
+        <section class="video-theatre">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <div class="content-container">
+            <main class="chapter-details">
+                <h1>Chapter 10: The Filthinator</h1>
+                <div class="chapter-description">
+                    <p><strong>Featuring: Julio Ramirez</strong></p>
+                    <p>Extracting the raw, biological truth from the "Primal Forest." Julio deconstructs the philosophy of the overgrowth and the high-voltage scent of the "Shadows." This chapter explores the tectonic rhythm of the Untamed King and the absolute obsession with a body that refuses to be pruned.</p>
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid #222; margin: 3rem 0;">
+
+                <section class="comment-section">
+                    <h3 style="color: #ff00ff; margin-bottom: 1.5rem;">The Conversation Pit</h3>
+                    <textarea class="comment-box" style="height: 100px;" placeholder="Discuss your extreme desires or leave a literary analysis..."></textarea>
+                    <button class="submit-post-btn">LEAVE COMMENT</button>
+                    
+                    <div style="margin-top: 4rem; color: #666; font-size: 0.9rem; text-align: center;">
+                        [ Threaded member comments will appear here ]
+                    </div>
+                </section>
+            </main>
+
+            <aside class="sidebar-actions">
+                <div class="action-item">
+                    <button class="auth-btn" style="width: 100%;">❤ ADD TO FAVORITES</button>
+                </div>
+                
+                <div class="action-item">
+                    <h4>Acquire the Relic</h4>
+                    <p style="font-size: 0.8rem; color: #888; margin-bottom: 1rem;">Own the Filthinator Bible or the Cinematic LUT pack used in this chapter.</p>
+                    <a href="vault.html" style="color: #ff00ff; text-decoration: none; font-size: 0.9rem; font-weight: bold;">Visit The Vault →</a>
+                </div>
+
+                <div class="action-item">
+                    <h4>Related Encounters</h4>
+                    <ul style="list-style: none; font-size: 0.85rem;">
+                        <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #ccc; text-decoration: none;">Chapter 9: The Elena Audit</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #ccc; text-decoration: none;">Chapter 7: Eva The Hunter</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+</body>
+</html>
