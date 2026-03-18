@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | The Officer's Lounge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .support-chamber {
+            padding: 6rem 10%;
+            background: #050505;
+            min-height: 100vh;
+        }
+        .support-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+        .support-card {
+            background: #0a0a0a;
+            border: 1px solid #222;
+            padding: 2.5rem;
+            transition: 0.3s;
+        }
+        .support-card:hover {
+            border-color: #00f2ff;
+        }
+        .support-card h3 {
+            color: #ff00ff;
+            margin-bottom: 1rem;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            background: #111;
+            border: 1px solid #333;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .contact-form input:focus {
+            border-color: #00f2ff;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="main-nav" style="position: relative; background: #000;">
+        <div class="logo">THE FILTH FACTOR</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Promenade</a></li>
+            <li><a href="community.html">The Pit</a></li>
+            <li><a href="profile.html">My Manifest</a></li>
+        </ul>
+    </nav>
+
+    <div class="support-chamber">
+        <h2 class="section-title">The Officer's Lounge</h2>
+        <p style="text-align: center; color: #ccc; max-width: 600px; margin: 0 auto;">
+            Technical assistance and inquiries for the Sovereign community and Vault residents.
+        </p>
+
+        <div class="support-grid">
+            <div class="support-card">
+                <h3>Submit a Request</h3>
+                <form class="contact-form">
+                    <input type="text" placeholder="MANIFEST IDENTITY" required>
+                    <input type="email" placeholder="CONTACT EMAIL" required>
+                    <textarea rows="5" placeholder="DESCRIBE YOUR INQUIRY (Vault, Community, or Literature)"></textarea>
+                    <button type="submit" class="auth-btn" style="width: 100%;">SEND TO COMMAND</button>
+                </form>
+            </div>
+
+            <div class="support-card">
+                <h3>Common Protocols</h3>
+                <div style="font-size: 0.9rem; color: #888;">
+                    <p style="margin-bottom: 1.5rem;">
+                        <strong style="color: #00f2ff;">VAULT ACCESS:</strong> If your digital relic (NFT or LUT) is not appearing, please ensure your wallet is synced or check your email for the download link.
+                    </p>
+                    <p style="margin-bottom: 1.5rem;">
+                        <strong style="color: #00f2ff;">MEMBERSHIP:</strong> Sovereign registration is free. If you have lost your Security Key, use the reset portal on the Gateway.
+                    </p>
+                    <p>
+                        <strong style="color: #00f2ff;">COMMUNITY:</strong> To report a breach of the Manifest of Conduct, please include the user's Identity and the specific post location.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Solomon Kin Records, LLC Media Group.</p>
+    </footer>
+
+</body>
+</html>
