@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Aboard | The Filth Factor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .success-chamber {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, #1a001a 0%, #050505 100%);
+            text-align: center;
+            padding: 2rem;
+        }
+        .welcome-card {
+            background: rgba(10, 10, 10, 0.9);
+            padding: 4rem;
+            border: 1px solid #00f2ff;
+            box-shadow: 0 0 30px rgba(0, 242, 255, 0.2);
+            max-width: 600px;
+        }
+        .welcome-card h1 {
+            color: #ff00ff;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 15px #ff00ff;
+        }
+        .manifest-id {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: #111;
+            border: 1px solid #00f2ff;
+            color: #00f2ff;
+            font-family: 'Cinzel', serif;
+            margin-bottom: 2rem;
+        }
+        .next-steps {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        .step-link {
+            text-decoration: none;
+            color: #fff;
+            padding: 1.5rem;
+            background: #0a0a0a;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+        .step-link:hover {
+            border-color: #ff00ff;
+            background: #111;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="success-chamber">
+        <div class="welcome-card">
+            <h1>Access Authorized</h1>
+            <p style="color: #ccc; margin-bottom: 1rem;">Your presence on the S.S. Seduction has been recorded.</p>
+            
+            <div class="manifest-id">IDENTITY: SOVEREIGN_SENSUALIST</div>
+            
+            <p style="font-size: 0.9rem; color: #888;">
+                You are now a verified member of the Filth Factor community. You have full access to the 
+                Conversation Pit, the Vault, and the Expanded Manifest Archives.
+            </p>
+
+            <div class="next-steps">
+                <a href="index.html" class="step-link">
+                    <h4 style="color: #00f2ff;">PROMENADE</h4>
+                    <p style="font-size: 0.7rem;">Watch the Encounters</p>
+                </a>
+                <a href="profile.html" class="step-link">
+                    <h4 style="color: #ff00ff;">MY MANIFEST</h4>
+                    <p style="font-size: 0.7rem;">Setup Your Profile</p>
+                </a>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <a href="community.html" style="color: #666; font-size: 0.8rem; text-decoration: none;">Explore the Conversation Pit →</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
