@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Manifest | The Filth Factor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .profile-wrapper {
+            padding: 5rem 10%;
+            background: #050505;
+            min-height: 100vh;
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            border: 2px solid #00f2ff;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 15px #00f2ff;
+        }
+        .profile-info h2 {
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff;
+        }
+        .stats-bar {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #888;
+        }
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+        .favorites-shelf, .upload-zone {
+            background: #0a0a0a;
+            padding: 2rem;
+            border: 1px solid #222;
+        }
+        .fav-item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: #111;
+            border-left: 3px solid #ff00ff;
+        }
+        .fav-item img {
+            width: 80px;
+            height: 45px;
+            object-fit: cover;
+        }
+        .upload-btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background: transparent;
+            border: 1px dashed #00f2ff;
+            color: #00f2ff;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .upload-btn:hover {
+            background: rgba(0, 242, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="main-nav" style="position: relative; background: #000;">
+        <div class="logo">THE FILTH FACTOR</div>
+        <ul class="nav-links">
+            <li><a href="index.html">The Promenade</a></li>
+            <li><a href="#vault">The Vault</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="profile-wrapper">
+        <div class="profile-header">
+            <img src="assets/default-avatar.jpg" alt="Avatar" class="profile-avatar">
+            <div class="profile-info">
+                <h2>Manifest Identity: Sovereign_User_01</h2>
+                <p>Status: Uninhibited Observer</p>
+                <div class="stats-bar">
+                    <span>Encounters Viewed: 12</span>
+                    <span>Favorites: 4</span>
+                    <span>Community Posts: 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="favorites-shelf">
+                <h3 style="margin-bottom: 1.5rem; color: #00f2ff;">Your Favorite Encounters</h3>
+                
+                <div class="fav-item">
+                    <img src="assets/thumb-ch10.jpg" alt="Ch 10">
+                    <div>
+                        <h4 style="font-size: 0.9rem;">Chapter 10: The Filthinator</h4>
+                        <a href="#" style="color: #ff00ff; font-size: 0.8rem; text-decoration: none;">Watch Again →</a>
+                    </div>
+                </div>
+
+                <div class="fav-item">
+                    <img src="assets/thumb-ch9.jpg" alt="Ch 9">
+                    <div>
+                        <h4 style="font-size: 0.9rem;">Chapter 9: The Elena Audit</h4>
+                        <a href="#" style="color: #ff00ff; font-size: 0.8rem; text-decoration: none;">Watch Again →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="upload-zone">
+                <h3 style="margin-bottom: 1.5rem; color: #ff00ff;">Contribute to the Project</h3>
+                <p style="font-size: 0.8rem; margin-bottom: 1rem; color: #888;">
+                    Upload your own high-end "Nautical Noir" imagery to the community feed.
+                </p>
+                <label class="upload-btn">
+                    <input type="file" style="display: none;">
+                    + UPLOAD AESTHETIC PHOTO
+                </label>
+                
+                <div style="margin-top: 2rem;">
+                    <h4 style="font-size: 0.8rem; color: #00f2ff; margin-bottom: 1rem;">Recent Uploads</h4>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                        <div style="height: 60px; background: #222;"></div>
+                        <div style="height: 60px; background: #222;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
