@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Command | The Filth Factor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .admin-wrapper {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            min-height: 100vh;
+            background: #050505;
+        }
+        .admin-sidebar {
+            background: #0a0a0a;
+            border-right: 1px solid #ff00ff;
+            padding: 2rem;
+        }
+        .admin-nav-list {
+            list-style: none;
+            margin-top: 2rem;
+        }
+        .admin-nav-list li {
+            margin-bottom: 1.5rem;
+        }
+        .admin-nav-list a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        .admin-nav-list a:hover {
+            color: #00f2ff;
+        }
+        .admin-main {
+            padding: 4rem;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+        .stat-card {
+            background: #111;
+            padding: 1.5rem;
+            border: 1px solid #222;
+            text-align: center;
+        }
+        .stat-card h4 { font-size: 0.7rem; color: #888; margin-bottom: 0.5rem; }
+        .stat-card p { font-size: 1.5rem; color: #ff00ff; font-family: 'Cinzel', serif; }
+
+        .form-section {
+            background: #0a0a0a;
+            padding: 2rem;
+            border: 1px solid #333;
+            margin-bottom: 3rem;
+        }
+        .form-section h3 { color: #00f2ff; margin-bottom: 1.5rem; }
+    </style>
+</head>
+<body>
+
+    <div class="admin-wrapper">
+        <aside class="admin-sidebar">
+            <div class="logo" style="font-size: 1.2rem;">COMMAND CENTER</div>
+            <ul class="admin-nav-list">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Manage Content</a></li>
+                <li><a href="#">Moderate Pit</a></li>
+                <li><a href="#">Vault Inventory</a></li>
+                <li><a href="index.html" style="color: #666;">Exit to Site</a></li>
+            </ul>
+        </aside>
+
+        <main class="admin-main">
+            <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Vessel Oversight</h2>
+
+            <div class="stats-grid">
+                <div class="stat-card"><h4>TOTAL MEMBERS</h4><p>1,248</p></div>
+                <div class="stat-card"><h4>ACTIVE ENCOUNTERS</h4><p>12</p></div>
+                <div class="stat-card"><h4>PIT COMMENTS</h4><p>3,402</p></div>
+                <div class="stat-card"><h4>VAULT REVENUE</h4><p>$4,150</p></div>
+            </div>
+
+            <section class="form-section">
+                <h3>Deploy New Encounter (YouTube Sync)</h3>
+                <div class="input-group">
+                    <label>YOUTUBE VIDEO URL</label>
+                    <input type="text" placeholder="https://www.youtube.com/watch?v=..." style="width: 100%; padding: 1rem; background: #000; border: 1px solid #333; color: #fff;">
+                </div>
+                <div class="input-group" style="margin-top: 1.5rem;">
+                    <label>CHAPTER TITLE & LORE DESCRIPTION</label>
+                    <textarea style="width: 100%; height: 100px; background: #000; border: 1px solid #333; color: #fff; padding: 1rem;"></textarea>
+                </div>
+                <button class="auth-btn" style="margin-top: 1.5rem;">SYNC TO PROMENADE</button>
+            </section>
+
+            <section class="form-section">
+                <h3>Moderate The Conversation Pit</h3>
+                <div style="font-size: 0.85rem; color: #ccc;">
+                    <div style="padding: 1rem; border-bottom: 1px solid #222; display: flex; justify-content: space-between;">
+                        <span><strong>Sovereign_Alpha_99:</strong> "The saturation of the natural state..."</span>
+                        <span style="color: #00f2ff; cursor: pointer;">APPROVE / DELETE</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
